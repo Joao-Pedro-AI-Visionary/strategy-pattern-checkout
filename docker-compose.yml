@@ -1,0 +1,8 @@
+name: strategy-pattern-checkout
+
+services:
+  api:
+    build: .
+    ports:
+      - "8089:8080"
+    restart: unless-stopped
