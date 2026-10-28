@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: strategy-pattern-checkout
+  jackson:
+    generator:
+      write-bigdecimal-as-plain: true
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
